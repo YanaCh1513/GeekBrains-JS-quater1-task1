@@ -38,7 +38,7 @@
 
 .menu_box {
     border: solid black 2px;
-    display: block;
+    display: none;
     position: absolute;
     background-color: #fff;
     padding: 20px 0;
@@ -58,7 +58,7 @@
     list-style-type: none;
     padding: 0 30px 0 40px;
     z-index: 10000;
-    height: 60px;
+    line-height: 30px;
 }
 
 .menu_section ul li a {
@@ -116,9 +116,6 @@
     display: flex;
     align-items: center;
     padding-left: 53%;
-
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 900;
     font-size: 28px;
 }
@@ -139,13 +136,14 @@
     flex-wrap: wrap;
     padding: 20px 0;
     margin: 0 auto;
-    z-index: -1000;
 }
 
-.promotion_item:last-of-type,
+
+
+/* .promotion_item:last-of-type,
 .promotion_item:last-of-type img {
     width: 100%;
-}
+} */
 
 .promotion_panel img {
     filter: brightness(50%);
@@ -158,32 +156,29 @@
 .promotion_item {
     position: relative;
     padding-top: 20px;
+    width: 350px;
+    height: 250px;
+
 }
 
-
-/* .promotion_item {
-
-    content: "sdfsdfsdf";
+.promotion_text {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 300px;
-    width: 300px;
-    background-color: aqua;
-    opacity: 0.5;
-    z-index: 1000;
-} */
+    top: 120px;
+    right: 90px;
+}
 
-img::before {
-    content: "<div>sdfsdfsdf</div>";
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    height: 300px;
-    width: 300px;
-    background-color: aqua;
-    opacity: 0.5;
-    z-index: 1000; */
+.promotion_text span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    display: block;
+}
+
+.promotion_text h4 {
+    color: #F16D7F;
+
 }
 
 .test {
