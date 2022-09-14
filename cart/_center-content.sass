@@ -1,0 +1,37 @@
+.cart-container
+
+    .row>*
+        padding-left: 0 !important
+
+    .cart
+        box-shadow: 10px 10px 10px #ccc
+        margin: 20px
+        .cart__title-text
+            font-size: 24px !important
+
+        p
+            margin: 0
+
+        .cart__info__value
+            @extend %value-margin
+            width: 40px
+
+        .cart__info__value_red
+            color: $red-color
+    .btn
+        @extend %border-no-round
+        // margin: 20px
+
+    input
+        @extend %border-no-round
+
+    .checkout-panel
+        background: #F5F3F3
+    hr
+        color: #1f1a1a
+
+    .checkout-panel__value
+        @extend %value-margin
+
+        .checkout-panel__value_red
+            color: $red-color !important
