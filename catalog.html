@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3f27ae9b39.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="catalog.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <a href="./index.html">
+                    <img src="./картинки/logo.svg" alt="logo">
+                </a>
+                <img src="./картинки/search.svg" alt="search">
+            </div>
+            <audio controls autoplay loop allow="autoplay">
+                <source src="./track.mp3" type="audio/mpeg">
+                Audio content is not supported by your browser
+            </audio>
+            <div>
+                <div class="menu">
+                    <img src="./картинки/menu.svg" alt="menu">
+                    <div class="menu_box">
+                        <div class="menu_section">
+                            <h3>MAN</h3>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_section">
+                            <h3>WOMAN</h3>
+                            <Ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                            </Ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="./картинки/profile.svg" alt="">
+                <img src="./картинки/backet.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="top-navigation">
+        <div class="container d-flex justify-content-between align-items-center h-100 align-middle">
+            <h2>NEW ARRIVALS</h2>
+            <nav aria-label="breadcrumb" class="align-middle">
+                <ol class="breadcrumb align-middle">
+                    <li class="breadcrumb-item align-middle" aria-current="page">
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="#">MEN</a>
+                    </li>
+                    <li class="breadcrumb-item primary_color" aria-current="page">
+                        <a href="#">NEW ARRIVALS</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="nav-panel">
+        <div class="container d-flex">
+            <div class="filter_menu  position-relative">
+                <h2 class="filter">FILTER </h2>
+                <i class="fa-sharp fa-solid fa-bars-sort"></i>
+                <div class="filter_menu_box position-absolute">
+                    <ul>
+                        <li class="title active"><a href="#">CATEGORY</a> </li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Sweaters & Knits</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Tanks</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"> <a href="#">BREND</a> </li>
+                        <li class="title"> <a href="#">DISIGNER</a> </li>
+                    </ul>
+
+                </div>
+            </div>
+            <DIV class="d-flex mx-auto">
+                <p>TRENDING NOW</p>
+                <div class="size-menu position-relative">
+                    <p>SIZE</p>
+                    <div class="size-menu-box position-absolute">
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="xs">
+                            <label for="xs">XS</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" id="s" type="checkbox">
+                            <label for="s">S</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" id="m" type="checkbox">
+                            <label for="m">M</label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" id="l" type="checkbox">
+                            <label for="l">L</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+                <p>PRICE</p>
+            </DIV>
+        </div>
+    </div>
+
+    <div class="container conteiner">
+        <!-- [<div class="product_panel-text">Fetured Items</div>
+        <div class="product_panel-text2">Shop for items based on what we featured in this week</div> -->
+
+        <div class="product_panel">
+            <div class="product_panel-item">
+                <a class="item-link" href="1">
+                    <div class="item-link-img">
+                        <img class="item-pic" src="./картинки/WINDCOAT.png" alt="товар">
+                        <div class="add-contaner">
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <p class="item-desk">ELLERY X M'O CAPSULE</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <!-- <a class="add" href="2">
+                    <img class="add-pic" src="./картинки/Forma 1 copy (1).svg" alt="card">
+                    <p class="add-desc">Add to Cart</p>
+                </a> -->
+            </div>
+
+            <div class="product_panel-item">
+                <a class="item-link" href="#">
+                    <div class="item-link-img">
+                        <img class="item-pic" src="./картинки/costume.png" alt="costume" alt="товар">
+                        <div class="add-contaner">
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <p class="item-desk">ELLERY X M'O CAPSULE</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <!-- <a class="add" href="#">
+                    <img class="add-pic" src="./картинки/Forma 1 copy (1).svg" alt="card">
+                    <p class="add-desc">Add to Cart</p>
+                </a> -->
+            </div>
+
+            <div class="product_panel-item">
+                <a class="item-link" href="#">
+                    <div class="item-link-img">
+                        <img class="item-pic" src="./картинки/shorts.png" alt="costume" alt="товар">
+                        <div class="add-contaner">
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <p class="item-desk">ELLERY X M'O CAPSULE</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <!-- <a class="add" href="#">
+                    <img class="add-pic" src="./картинки/Forma 1 copy (1).svg" alt="card">
+                    <p class="add-desc">Add to Cart</p>
+                </a> -->
+            </div>
+
+            <div class="product_panel-item">
+                <a class="item-link" href="#">
+                    <div class="item-link-img">
+                        <img class="item-pic" src="./картинки/T-shirt.png" alt="costume" alt="товар">
+                        <div class="add-contaner">
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <p class="item-desk">ELLERY X M'O CAPSULE</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <!-- <a class="add" href="#">
+                    <img class="add-pic" src="./картинки/Forma 1 copy (1).svg" alt="card">
+                    <p class="add-desc">Add to Cart</p>
+                </a> -->
+            </div>
+
+            <div class="product_panel-item">
+                <a class="item-link" href="#">
+                    <div class="item-link-img">
+                        <img class="item-pic" src="./картинки/jaket.png" alt="costume" alt="товар">
+                        <div class="add-contaner">
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <p class="item-desk">ELLERY X M'O CAPSULE</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <!-- <a class="add" href="#">
+                    <img class="add-pic" src="./картинки/Forma 1 copy (1).svg" alt="card">
+                    <p class="add-desc">Add to Cart</p>
+                </a> -->
+            </div>
+
+            <div class="product_panel-item">
+                <a class="item-link" href="#">
+                    <div class="item-link-img">
+                        <img class="item-pic" src="./картинки/blouse.png" alt="costume" alt="товар">
+                        <div class="add-contaner">
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <p class="item-desk">ELLERY X M'O CAPSULE</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <!-- <a class="add" href="#">
+                    <img class="add-pic" src="./картинки/Forma 1 copy (1).svg" alt="card">
+                    <p class="add-desc">Add to Cart</p>
+                </a> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <button class="button-product">Browse All Product</button>
+    <footer>
+        <div class="footer1">
+            <div class="footer1-content container">
+                <div class="footer1-content_card">
+                    <img src="./картинки/footer/Forma 1.svg." alt="forma1">
+                    <p>Free Delivery</p>
+                </div>
+                <div class="footer1-content_card">
+                    <img src="./картинки/footer/Forma 2.svg" alt="forma2">
+                    <p>Sales & discounts</p>
+                </div>
+                <div class="footer1-content_card">
+                    <img src="./картинки/footer/Forma 3.svg" alt="forma3">
+                    <p>Quality assurance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div class="footer2-content container">
+                <div class="footer2-content_card">
+                    <img src="./картинки/footer/Intersect.png" alt="Intersect">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <div class="footer2-content_card">
+                    <h4>
+                        SUBSCRIBE
+                    </h4>
+                    <p>
+                        FOR OUR NEWLETTER AND PROMOTION
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Enter Your Email">
+                        <button class="button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer3">
+            <div class="footer3_content container">
+                <p>© 2021 Brand All Rights Reserved.</p>
+                <div>
+                    <!-- <img src="./картинки/social/facebook.svg" alt="logo">
+                <img src="./картинки/social/instagramm.svg" alt="logo">
+                <img src="./картинки/social/p.svg" alt="logo">
+                <img src="./картинки/social/tweeter.svg" alt="logo"> -->
+                    <i class="fa fa-brands fa-vk"></i>
+                    <i class="fa fa-brands fa-vk"></i>
+                    <i class="fa fa-brands fa-vk"></i>
+                    <i class="fa fa-brands fa-vk"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
