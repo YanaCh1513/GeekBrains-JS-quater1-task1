@@ -35,7 +35,7 @@
                 </a>
                 <img src="../картинки/search.svg" alt="search">
             </div>
-            <audio controls autoplay loop allow="autoplay">
+            <audio controls autoplay loop>
                 <source src="../track.mp3" type="audio/mpeg">
                 Audio content is not supported by your browser
             </audio>
@@ -73,19 +73,6 @@
     <div class="top-navigation">
         <div class="container d-flex justify-content-between align-items-center h-100 align-middle">
             <h2>REGISTRATION</h2>
-            <!-- <nav aria-label="breadcrumb" class="align-middle">
-                <ol class="breadcrumb align-middle">
-                    <li class="breadcrumb-item align-middle" aria-current="page">
-                        <a href="./index.html">HOME</a>
-                    </li>
-                    <li class="breadcrumb-item" aria-current="page">
-                        <a href="#">MEN</a>
-                    </li>
-                    <li class="breadcrumb-item primary_color" aria-current="page">
-                        <a href="#">NEW ARRIVALS</a>
-                    </li>
-                </ol>
-            </nav> -->
         </div>
     </div>
 
@@ -132,11 +119,6 @@
                         these as soon as you join:</p>
                     <ul>
                         <li>
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                                class="bi bi-check2" viewBox="0 0 16 16">
-                                <path
-                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-                            </svg> -->
                             <p>15% off welcome offer</p>
                         </li>
                         <li>
@@ -160,23 +142,6 @@
     </div>
 
     <footer>
-        <!-- <div class="footer1" style="display: none">
-            <div class="footer1-content container">
-                <div class="footer1-content_card">
-                    <img src="../картинки/footer/Forma 1.svg." alt="forma1">
-                    <p>Free Delivery</p>
-                </div>
-                <div class="footer1-content_card">
-                    <img src="../картинки/footer/Forma 2.svg" alt="forma2">
-                    <p>Sales & discounts</p>
-                </div>
-                <div class="footer1-content_card">
-                    <img src="../картинки/footer/Forma 3.svg" alt="forma3">
-                    <p>Quality assurance</p>
-                </div>
-            </div>
-        </div> -->
-
         <div class="footer2">
             <div class="footer2-content container">
                 <div class="footer2-content_card">
@@ -211,12 +176,14 @@
         </div>
     </footer>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
+    <script>
+        var audio = document.querySelector("audio");
+        audio.volume = 0.2;
+    </script>
 </body>
 
 </html>
