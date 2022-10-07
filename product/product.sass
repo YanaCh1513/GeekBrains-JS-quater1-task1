@@ -1,0 +1,481 @@
+
+$red-color: #F16D7F
+$black-color: #000
+// $gray-color: #5D5D5D
+$gray-color: #5E5E5E
+$gray-background: #F8F8F8
+
+*
+    font-family: 'Lato'
+    font-size: 16px !important
+    box-sizing: border-box
+
+@media (min-width: 1400px) and (max-width: 2500px)
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl
+        max-width: 1140px
+
+@media  (max-width: 768px)
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl
+        width: 100%
+        max-width: 100%
+
+.top-navigation h2
+    color: $red-color
+    font-size: 20px !important
+
+.top-navigation a
+    text-decoration: none
+    color: inherit
+    font-size: 14px !important
+
+.nav-panel p
+    padding-right: 40px
+
+.nav-panel h2
+    font-size: 14px !important
+    color: $red-color
+
+.filter_menu .filter_menu_box
+    box-shadow: 0 0 10px gray
+    z-index: 111
+    width: 220px
+    background-color: white
+    display: none
+
+    & li
+        margin-top: 4px
+        list-style-type: none
+        font-size: 14px
+        text-align: left
+        color: #6F6E6E
+
+    & li a
+        padding-left: 6px
+        text-decoration: none
+        color: #6F6E6E
+
+    & li.title a
+        border-left: 4px solid #F16D7F !important
+
+    & li.title.active a
+        color: $red-color !important
+
+.filter_menu:hover .filter_menu_box
+    display: block
+
+.filter_menu:hover li:hover
+    background-color: $red-color
+
+.filter_menu:hover li:hover a
+    color: #f5f0f1 !important
+
+.filter_menu:hover li:hover.title.active a
+    color: #f5f0f1 !important
+
+.size-menu-box
+    z-index: 1
+    background-color: #fff
+    width: 100px
+    padding: 15px
+    box-shadow: 0 0 10px gray
+    display: none
+    color: #6F6E6E
+
+    & input
+        color: #f5f0f1
+        accent-color: $red-color !important
+        margin-right: 5px
+        box-shadow: none !important
+
+    .size-menu:hover &
+        display: block
+
+.header
+    background-color: #222
+    height: 50px
+
+    & > div
+        height: inherit
+
+.primary_color
+    color: $red-color !important
+
+.breadcrumb-item
+    color: #636363
+
+.header div img,
+.header div a
+    margin-right: 25px
+
+.header div img:last-of-type
+    margin-right: 0
+
+audio
+    height: 35px
+    width: 300px
+
+.menu
+    cursor: pointer
+    position: relative
+    display: inline-block
+    margin-right: 25px
+    z-index: 1000
+
+    &:hover .menu_box
+        display: block
+
+    &_box
+        border: solid black 2px
+        display: none
+        position: absolute
+        background-color: #fff
+        padding: 20px 0
+        width: 232px
+
+    &_box h3
+        padding-bottom: 20px
+        color: palevioletred
+        padding-left: 20px
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+
+    &_box li
+        list-style-type: none
+        padding: 0 30px 0 40px
+        z-index: 10000
+        line-height: 30px
+
+    &_section ul li a
+        font-family: 'Lato', sans-serif
+        font-size: 14px
+        font-weight: 400
+        line-height: 17px
+        letter-spacing: 0em
+        text-align: left
+        color: #6F6E6E
+
+    &_box li:last-of-type
+        padding-bottom: 0
+
+    &_box li:hover
+        background-color: palevioletred
+
+    &_box li:hover a
+        color: #fff
+
+    &_section
+        margin-bottom: 25px
+
+    &_section:last-of-type
+        margin-bottom: 0
+
+.title
+    color: $black-color
+    font-style: normal
+    font-weight: 400
+    font-size: 13px
+    line-height: 16px
+
+.description
+    color: $gray-color
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+
+.price
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: $red-color
+
+.item-link
+    display: block
+
+.top-navigation
+    height: 130px
+    background-color: #F8F3F4
+
+.top-panel
+    background-color: $gray-background
+    padding-bottom: 40px
+    img
+        margin: 0 auto
+        display: block
+
+.hr-red
+    background: $red-color
+    height: 4px
+    border-color: none
+    width: 65px
+
+.info-panel
+    top: -65px
+    margin-bottom: 128px
+    padding: 65px 0
+    &__content
+        max-width: 650px
+        text-align: center
+        margin: 0 auto
+    &__card
+    &__price
+        font-size: 24px !important
+        margin-bottom: 65px
+    &__menu
+        width: 420px
+        margin: 0 auto
+        margin-bottom: 48px
+        img
+            margin-left: 10px
+    &__btn
+        width: 211px
+        img
+            margin-right: 15px
+    &__hr-red
+        margin: 0 auto
+        margin-bottom: 12px
+    &__title
+        margin-bottom: 48px
+    &__description
+        margin-bottom: 32px
+    hr
+        margin-bottom: 65px
+
+.card-panel
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 128px
+    &__card
+        width: 32%
+        border: none
+        background-color: $gray-background
+    .card-img
+        img
+            width: 100%
+.card-info
+    padding: 24px 18px 10px 18px
+
+.card
+    min-width: 200px
+    a
+        text-decoration: none
+    &__title
+        margin-bottom: 12px
+    &__description
+        margin-bottom: 18px
+
+%border-no-round
+    border-radius: 0
+    border-color: #dce0e3
+
+%value-margin
+    margin-left: 5px
+
+.footer1
+    background-color: #222
+    color: #fff
+    box-sizing: border-box
+
+    &-content
+        display: flex
+        justify-content: space-around
+        padding: 103px 0
+
+    &-content_card
+        text-align: center
+
+    &-content_card p
+        margin-top: 28px
+
+.footer2
+    background: url("../картинки/footer/Layer\ 41.png") no-repeat
+    background-size: 100% 100%
+    width: 100%
+    height: 400px
+    box-shadow: inset 0px 0px 0px 256px rgba(255, 255, 255, 0.45)
+
+    &-content
+        display: flex
+        justify-content: space-between
+
+    &-content_card
+        text-align: center
+        width: 460px
+        margin-top: 86px
+        margin-bottom: 126px
+
+    &-content_card p
+        font-size: 24px
+
+    &-content_card img
+        padding-bottom: 20px
+
+    &-content_card .button
+        border-bottom-right-radius: 40px
+        border-top-right-radius: 40px
+        background-color: #F16D7F
+        color: #F8F8F8
+        padding: 15px
+        border: 1px #F16D7F transparent
+        font-size: 14px
+
+    &-content_card .button:hover
+        background-color: #fff
+        color: $red-color
+        border: 1px solid #FF6A6A transparent
+
+    &-content_card form
+        margin-top: 30px
+        display: flex
+        justify-content: center
+
+    &-content_card input
+        border-style: none
+        background-color: #f5f0f1
+        border-bottom-left-radius: 40px
+        border-top-left-radius: 40px
+        outline: none
+        color: #000
+        box-sizing: border-box
+        font-size: 14px
+        width: 300px
+
+    &-content_card:nth-of-type(2) p
+        font-size: 18px
+
+    &-content_card:nth-of-type(2) h4
+        font-size: 24px
+        margin-top: 50px
+
+.footer3
+    background-color: #222
+
+    & p
+        font-size: 16px
+        color: white
+
+    &_content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 0 20px 0
+
+.fa
+    font-size: 22px
+    background-color: white
+    border-radius: 2px
+    padding: 5px
+    line-height: 10px
+
+    &:hover
+        background-color: $red-color
+        color: white
+
+    &-vk
+
+@media (min-width: 480px) and(max-width: 768px)
+    audio
+        display: none
+    .top-panel
+        img
+            height: 624px
+
+    .info-panel
+        top: 0px
+        &__content
+            max-width: 580px
+    .card-panel
+        &__card
+            width: 48%
+
+    .footer2
+        height: 600px
+
+    .footer2-content
+        flex-wrap: wrap
+        .footer2-content_card
+            width: 98%
+        .footer2-content_card:nth-of-type(1)
+            margin-bottom: 0px
+        .footer2-content_card:nth-of-type(2)
+            margin-top: 0px
+
+    .footer3_content
+        padding: 20px
+
+@media (max-width: 480px)
+    audio
+        display: none
+    .top-navigation>div
+        display: block !important
+        padding-top: 30px
+        h2
+            margin: 0 auto
+            margin-bottom: 20px
+            text-align: center
+        nav
+            margin: 0 auto
+            display: table
+            text-align: center
+
+    .top-panel
+        img
+            height: 430px
+    .info-panel
+        top: 0px
+        &__content
+            max-width: 326px
+        &__menu
+            width: 326px
+            margin: 0 auto
+            margin-bottom: 48px
+            p
+                font-size: 10px !important
+                line-height: 12px
+        hr
+            margin-bottom: 50px
+
+        &__price
+            margin-bottom: 50px
+
+    .card-panel
+        &__card
+            width: 98%
+
+    .footer2
+        height: 600px
+
+    .footer2-content
+        flex-wrap: wrap
+        .footer2-content_card
+            width: 98%
+        .footer2-content_card:nth-of-type(1)
+            margin-bottom: 0px
+        .footer2-content_card:nth-of-type(2)
+            margin-top: 0px
+
+    .footer3_content
+        display: flex
+        flex-wrap: wrap-reverse
+        p
+            width: 100%
+            margin: 0 auto
+            text-align: center
+        div
+            width: 100%
+            margin: 0 auto
+            text-align: center
+            margin-bottom: 10px
