@@ -454,6 +454,7 @@ button:hover {
     box-sizing: border-box;
     font-size: 14px;
     width: 300px;
+    padding-left: 20px;
 }
 
 .footer2-content_card:nth-of-type(2) p {

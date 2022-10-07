@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css")
 
 $red-color: #F16D7F
 $black-color: #000
@@ -28,6 +29,18 @@ $gray-background: #F8F8F8
     .container-xxl
         width: 100%
         max-width: 100%
+
+.button
+    background-color: #F16D7F
+    color: #F8F8F8
+    padding: 15px
+    border: 1px solid #F16D7F
+    font-size: 14px
+
+.button:hover
+    background-color: #fff
+    color: $red-color
+    border: 1px solid #FF6A6A transparent
 
 .top-navigation h2
     color: $red-color
@@ -221,61 +234,76 @@ audio
     border-color: none
     width: 65px
 
-.info-panel
-    top: -65px
-    margin-bottom: 128px
-    padding: 65px 0
-    &__content
-        max-width: 650px
-        text-align: center
-        margin: 0 auto
-    &__card
-    &__price
-        font-size: 24px !important
-        margin-bottom: 65px
-    &__menu
-        width: 420px
-        margin: 0 auto
-        margin-bottom: 48px
-        img
-            margin-left: 10px
-    &__btn
-        width: 211px
-        img
-            margin-right: 15px
-    &__hr-red
-        margin: 0 auto
-        margin-bottom: 12px
-    &__title
-        margin-bottom: 48px
-    &__description
-        margin-bottom: 32px
-    hr
-        margin-bottom: 65px
+.reg
+    display: grid
+    grid-template-columns: 0.8fr 1.2fr
+    grid-column-gap: 100px
+    grid-row-gap: 25px
+    margin: 64px 0 96px 0
+    &__form-control
+        margin-bottom: 20px
+        border-radius: 0
+    &__button
+        padding-left: 35px
+        padding-right: 35px
+        white-space: pre
+    .info
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
 
-.card-panel
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    margin-bottom: 128px
-    &__card
-        width: 32%
-        border: none
-        background-color: $gray-background
-    .card-img
-        img
-            width: 100%
-.card-info
-    padding: 24px 18px 10px 18px
+    .reg-name
+        grid-column: 1 /2
+        grid-row: 1 / 2
+    .reg-login
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+    .reg-info
+        grid-column: 2 / 3
+        grid-row: 1 / 4
+        p
+            font-size: 24px !important
+            line-height: 29px
+        ul
+            list-style: none
+            li
+                position: relative
+            li:before
+                position: absolute
+                content: '✓'
+                left: -30px
+                top: 0
+                font-size: larger
+                font-weight: bold
 
-.card
-    min-width: 200px
-    a
-        text-decoration: none
-    &__title
-        margin-bottom: 12px
-    &__description
-        margin-bottom: 18px
+    .reg-btn
+        grid-column: 1 / 2
+        grid-row: 3 / 4
+
+@media (min-width: 480px) and(max-width: 768px)
+    .reg
+        grid-column-gap: 20px
+
+@media  (max-width: 480px)
+    .reg
+        grid-column-gap: 7px
+        grid-template-columns: 1fr
+
+        .reg-name
+            grid-column: 1 / 2
+            grid-row: 1 / 2
+        .reg-login
+            grid-column: 1 / 2
+            grid-row: 2 / 3
+        .reg-info
+            grid-column: 1 / 2
+            grid-row: 4 / 5
+        .reg-btn
+            grid-column: 1 / 2
+            grid-row: 3 / 4
+
+.reg-panel
 
 %border-no-round
     border-radius: 0
@@ -323,19 +351,9 @@ audio
     &-content_card img
         padding-bottom: 20px
 
-    &-content_card .button
+    &__button
         border-bottom-right-radius: 40px
         border-top-right-radius: 40px
-        background-color: #F16D7F
-        color: #F8F8F8
-        padding: 15px
-        border: 1px #F16D7F transparent
-        font-size: 14px
-
-    &-content_card .button:hover
-        background-color: #fff
-        color: $red-color
-        border: 1px solid #FF6A6A transparent
 
     &-content_card form
         margin-top: 30px
