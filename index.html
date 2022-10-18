@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="index.css">
 
     <script src="https://kit.fontawesome.com/3f27ae9b39.js" crossorigin="anonymous"></script>
@@ -23,7 +26,7 @@
             </a>
             <img src="./картинки/search.svg" alt="search">
         </div>
-        <div>
+        <div style="display:flex">
             <div class="menu">
                 <img src="./картинки/menu.svg" alt="menu">
                 <div class="menu_box">
@@ -49,10 +52,62 @@
                 </div>
             </div>
             <img src="./картинки/profile.svg" alt="">
-            <img src="./картинки/backet.svg" alt="">
+            <div class="menu basket-menu">
+                <span class="fa-stack basket-count" data-count="0"><img src="./картинки/backet.svg" alt="">
+                    <!-- <i class="fa fa-circle fa-stack-2x fa-inverse"></i> -->
+                    <!-- <i style="" class="fa fa-shopping-cart fa-stack-2x red-cart"></i> -->
+                </span>
+                <div class="menu_box">
+                    <div class="basket-box"></div>
+                </div>
+            </div>
         </div>
     </div>
+    <style>
+        .fa-stack[data-count]:after {
+            position: absolute;
+            right: 2px;
+            background-color: black;
+            top: -7px;
+            content: attr(data-count);
+            font-size: 0.9em;
+            padding: .2em;
+            border-radius: 999px;
+            line-height: 0.75em;
+            color: white;
+            color: #faa;
 
+            /* color: $shopping-cart-red; */
+            text-align: center;
+            min-width: 1em;
+            font-weight: bold;
+            /* background: white; */
+            border-style: solid;
+        }
+
+        .fa-circle {
+            color: #DF0000;
+        }
+
+        .red-cart {
+            color: #DF0000;
+            background: white;
+        }
+
+
+        .badge:after {
+            content: attr(value);
+            font-size: 12px;
+            background: red;
+            border-radius: 50%;
+            padding: 3px;
+            position: absolute;
+            left: -8px;
+            top: -10px;
+            opacity: 0.9;
+            z-index: 2;
+        }
+    </style>
     <div class="front_panel">
         <div class="front_panel_text">
             <h1>THE BRAND</h1>
@@ -100,17 +155,18 @@
             <div class="product_panel-text2">Shop for items based on what we featured in this week</div>
 
             <div class="product_panel">
-                <div class="product_panel-item">
+
+                <!-- <div class="product_panel-item">
                     <a class="item-link" href="1">
                         <div class="item-link-img">
                             <img class="item-pic" src="./картинки/WINDCOAT.png" alt="товар">
                             <div class="add-contaner">
                             </div>
                         </div>
-                        <div class="text-box">
+                        <di v class="text-box">
                             <p class="item-desk">ELLERY X M'O CAPSULE</p>
                             <p class="item-price">$52.00</p>
-                        </div>
+
                     </a>
                     <a class="add" href="2">
                         <img class="add-pic" src="./картинки/Forma%201%20copy%20(1).svg" alt="card">
@@ -207,6 +263,7 @@
                         <p class="add-desc">Add to Cart</p>
                     </a>
                 </div>
+                -->
             </div>
         </div>
     </div>
@@ -262,6 +319,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="budget.js"></script>
 </body>
 
 </html>
