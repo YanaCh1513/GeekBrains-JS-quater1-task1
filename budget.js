@@ -46,13 +46,20 @@ class Product {
     }
 }
 
+class BasketProduct extends Product {
+    constructor(id, parentId, description, price) {
+        super(id, description, price, '');
+        this.parentId = parentId;
+    }
+}
+
 let products = [
     new Product(0, "ELLERY X M'O CAPSULE", 52, "./картинки/WINDCOAT.png"),
     new Product(1, "ELLERY X M'O COSTUME", 25.1, "./картинки/costume.png"),
     new Product(2, "ELLERY X M'O SHORTS", 56, "./картинки/shorts.png"),
     new Product(3, "ELLERY X M'O T-SHIRT", 22.3, "./картинки/T-shirt.png"),
     new Product(4, "ELLERY X M'O JAKET", 11.9, "./картинки/jaket.png"),
-    new Product(4, "ELLERY X M'O BLOUSE", 51, "./картинки/blouse.png")
+    new Product(5, "ELLERY X M'O BLOUSE", 51, "./картинки/blouse.png")
 ];
 
 let basketProducts = [];
@@ -85,7 +92,7 @@ let basketProducts = [];
 
             // console.log(copy);
             let newId = basketProducts.length > 0 ? basketProducts[basketProducts.length - 1].id + 1 : 0;
-            basketProducts.push(new Product(newId, foundProduct.description, foundProduct.price, ''));
+            basketProducts.push(new BasketProduct(newId, foundProduct.id, foundProduct.description, foundProduct.price));
             // console.log(basketProducts);
 
             updateBudget(basketProducts);
@@ -130,6 +137,7 @@ let basketProducts = [];
         // change number of products in budget
         document.querySelector('.basket-count').dataset.count = basketProducts.length;
 
+        // show basket if basketProducts.length > 0
         if (basketProducts.length > 0)
             document.querySelector('.basket-menu .menu_box').style['visibility'] = 'visible';
         else
