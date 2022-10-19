@@ -7,14 +7,16 @@
 }
 
 .header {
+    position: sticky;
+    top: 0;
     background-color: #222;
     height: 50px;
     padding: 0 230px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
-
 
 .header div img,
 .header div a {
@@ -34,12 +36,12 @@
 }
 
 .menu:hover .menu_box {
-    display: block;
+    visibility: visible;
 }
 
 .menu_box {
     border: solid black 2px;
-    display: none;
+    visibility: hidden;
     position: absolute;
     background-color: #fff;
     padding: 20px 0;
@@ -252,7 +254,6 @@
     display: block;
     text-decoration: none;
     background: #F8F8F8;
-
 }
 
 .item-link-img {
@@ -292,8 +293,48 @@
     filter: brightness(50%);
 }
 
+/* 
+table {
+    font-size: small;
+} */
+
+.basket-menu .menu_box {
+    /* visibility: visible; */
+    width: auto;
+    left: -140px;
+    padding: 50px;
+    min-width: 430px;
+}
+
+.basket-box p {
+    font-size: 18px;
+}
+
+.basket-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
+.basket-box i.fa.fa-trash {
+    font-size: large;
+
+}
+
+.basket-count {
+    font-size: large;
+}
+
 .add-contaner {
     /* filter: brightness(100%) !important; */
+}
+
+.add>img,
+.add>p {
+    pointer-events: none;
 }
 
 .add {
@@ -305,6 +346,12 @@
     border: 1px solid #FFFFFF;
     align-items: center;
     text-decoration: none;
+}
+
+.add:hover {
+    background-color: #F16D7F;
+    color: #F1E4E6;
+    border-color: #F16D7F;
 }
 
 .add-desc {
@@ -393,12 +440,6 @@ button:hover {
     box-shadow: inset 0px 0px 0px 256px rgba(255, 255, 255, 0.45);
 }
 
-/* .footer2-content_card input {
-    margin: 0px;
-    padding: 0px;
-    border: 0;
-    padding: 0 !important;
-} */
 
 .footer2-content {
     display: flex;
@@ -454,6 +495,7 @@ button:hover {
     box-sizing: border-box;
     font-size: 14px;
     width: 300px;
+    padding-left: 20px;
 }
 
 .footer2-content_card:nth-of-type(2) p {

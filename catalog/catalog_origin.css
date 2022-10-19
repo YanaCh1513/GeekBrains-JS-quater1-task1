@@ -17,8 +17,8 @@
 }
 
 .top-navigation h2 {
-color: #F16D7F;
-font-size: 20px !important;
+    color: #F16D7F;
+    font-size: 20px !important;
 }
 
 .top-navigation a {
@@ -47,7 +47,6 @@ font-size: 20px !important;
 .header>div {
     height: inherit;
 }
-
 
 /* .d-flex {
     display: flex;
@@ -350,7 +349,7 @@ button:hover {
 }
 
 .footer2 {
-    background: url("./картинки/footer/Layer\ 41.png") no-repeat;
+    background: url("./../картинки/footer/Layer\ 41.png") no-repeat;
     /* background-size: cover; */
     background-size: 100% 100%;
     width: 100%;
